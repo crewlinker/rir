@@ -1,0 +1,11 @@
+listen_addr = "localhost:8282"
+
+[[dir]]
+screenshot_file_pattern = "*.screenshot.jpeg"
+
+[[dir]]
+path = "examples/example1"
+test_file_pattern = "*_test.go"
+template_file_pattern = "*.gotmpl"
+screenshot_file_pattern = "*.screenshot.jpeg"
+test_command = ["go", "test", "-v", "./examples/example1", "-run=RenderScreenshot1"]
